@@ -1,0 +1,368 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Specifications &#8212; Automated Laundry System  documentation</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <link rel="shortcut icon" href="_static/apple_notes_icon_public_domain_via_wikimedia_commons.svg"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Implementation" href="3.Implementation.html" />
+    <link rel="prev" title="literature research" href="1.Literature%20research.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/apple_notes_icon_public_domain_via_wikimedia_commons.svg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Automated Laundry System  documentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Contents
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Overview.html">
+   Overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="1.Literature%20research.html">
+   literature research
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Specifications
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="3.Implementation.html">
+   Implementation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="4.Improvement.html">
+   Future Work
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="5.Conclusion.html">
+   Conclusions
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="6.Source%20code.html">
+   Source Code
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/2.Specifications.md.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Specifications</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section id="specifications">
+<h1>Specifications<a class="headerlink" href="#specifications" title="Permalink to this headline">#</a></h1>
+<p>the automated laundry system functions as follows.
+There are 9 machines in the room, there is several inputs like the nearby person sensor,
+that will give 1 once there are a person near the machine like the sensor that is being used
+in ATMs. And there are also outputs like the change of the coin and the results of course
+are displayed on the seven-segment display. A memory is used to show the how many
+washing machines are available. For easiness of programming the user can insert 50 cent
+and one euro, The needed amount is 200 cents for activation a machine.
+For example, when a person is nearby the sensor detects the user and activate the system.
+A memory is being used to count the used machines to detect the availability state, the
+user also has to input a pin that is for the system.
+If there are available machine it will be used to process to the next stage which is
+payment. The seven-segment display will show PAY, Full and many other situations. If the
+coins are being inserted the stage 4 then will be activated.
+The summation of the inserted coins is shown on the seven-segment display. If the
+summation reaches 200 cent the next step will be then activated which is the start state if
+the coins are more than 200 an output of the change will be then triggered</p>
+<p>As explained above we will be having 6 machine states</p>
+<p>no_action_state : initial state</p>
+<p>user_detect_state
+This state detects if a user near the controller via sensor.</p>
+<p>verification_state
+This state comes after user detected state where the user has been detected and the user
+will need to enter a password. Then verify the password will be handled here and if the
+password is correct the used washing machine number will be displayed on the 7-
+segement-display.</p>
+<p>availability_state
+A memory check will be proceeded here to check if the entered washing machine number
+to be used is available or not.</p>
+<p>payment_state
+Now the user can pay for the wash using 50, 20, 10 and 5 cents.</p>
+<p>start_state
+The user ready to use the washing machine.</p>
+<p>full_state
+Will display full sign on the 7-segment-display screen</p>
+<p><img alt="Boolean Board " src="https://mygit.th-deg.de/hj03417/fpga_project/-/raw/main/Images/Board.jpg" /></p>
+<p align="center"> Fig.2.2 Boolean board inputs and outputs that are used in the project </p>  
+<p>In this project there are 1 major hardware components which are:
+• FPGA board: Xilinx Spartan-7 XC7S50 CSGA324
+https://www.realdigital.org/hardware/boolean</p>
+<p>In the Image above the inputs and the output representation is
+Input</p>
+<ul class="simple">
+<li><p>Nearby person sensor (Switch) → nearby person is approaching the system</p></li>
+<li><p>Push button [0:3]→ to trigger the payment elements which is 50 and 100 cents</p></li>
+<li><p>4 switches for the address</p></li>
+<li><p>4 switches for the password</p></li>
+<li><p>Clock → Main clock of the Boolean board(100MHz)
+Output</p></li>
+<li><p>Seven segment display1 → will display the number of available machines</p></li>
+<li><p>Seven segment display2 → will guide the user</p></li>
+<li><p>Led (0-3)→ Green LED for Coin_out</p></li>
+</ul>
+</section>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="1.Literature%20research.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">literature research</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="3.Implementation.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Implementation</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Huthaifa Jad-Allah<br/>
+  
+      &copy; Copyright Creative Commons Attribution 4.0 International License.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

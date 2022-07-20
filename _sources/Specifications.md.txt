@@ -1,0 +1,34 @@
+# Specifications
+
+The Robotic Arm project consists of 2 major hardware components which are:
+
+FPGA board: Xilinx Spartan-7 XC7S50-CSGA324 , and it was provided by Deggendorf Institute of Technology which costs around 69 dollars on Realdigital website.
+
+Wooden arm with 4 servo motors which I bought for almost 20 Euros on Amazon.
+
+The following image illustrates how the arm is connected to the board as well as the inputs and the outputs used.
+
+block diagram image
+
+Image credits: realdigital, Amazon
+
+# Servo motors
+
+The 4 micro servo motors operate with ~5 Volts where each servo motor has 3 wires ( GND, Vs, and a Signal input). These motors are fed with voltage (Vs pins : J4 -> J7 ) from the board which gets the power from the micro usb port, and the ground signal is connected to GND pins in the same set. Regarding the Signal wires, they are also connected to the SIG ports.
+
+Functionalities
+The circuit operates in two different modes:
+
+# Manual mode
+
+The user can select one of the servo motors to control using a slide switch.
+
+The selected servo motor can be controlled (change direction) using two push buttons.
+
+A 7 segment display to show the number of the selected servo motor.
+
+# Automatic mode
+
+The robotic arm can be run automatically using a slide switch which allows it to operate in a repetitive movement.
+
+Another seven segment display is used to show a letter A ( automated ).

@@ -1,0 +1,19 @@
+# Literature research
+
+The idea for this project came from my previous work experience as Technical Trainer, I had
+installed this device in the office building which was used to communicate between the service 
+office and other offices, for example, if number one shows on the display that means 
+the manager is calling. Based on that, each number indicates a specific call for help as
+shown below ↓.
+
+- Number one   &rarr; Manager Office   
+- Number two   &rarr; Manager Assistant Office
+- Number three &rarr; Chief Executive Office
+- Number four  &rarr; Chief Operating Office 
+- Number five  &rarr; Chief Financial Office 
+- Number six   &rarr; Chief Information Office 
+- Number seven &rarr; Chief Technology Office 
+- Number eight &rarr; Chief Human Resources Office 
+- Number nine  &rarr; Chief Data Office 
+
+![Call Bell System](https://mygit.th-deg.de/aa01209/intercom-call-nurse-system/-/blob/main/Images/Call%20bell%20system.png)

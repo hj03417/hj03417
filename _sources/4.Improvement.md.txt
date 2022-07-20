@@ -1,0 +1,9 @@
+
+
+# Future Work
+
+This project can be further developed by making a central system where lot of machines
+serves lot of people. Also employing the an app for wireless connection with smartphones
+or tablets using IoT will help people find out if there is an available machine or not. A
+booking system also would be helpful when the system in full state instead of waiting for
+turn, a booking can be done through this app.

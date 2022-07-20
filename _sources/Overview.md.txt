@@ -1,0 +1,5 @@
+# Overview
+
+Automated laundry system could help guide the user of the machines room and also
+could organize the process of the washing in dorms or anywhere has large population.
+

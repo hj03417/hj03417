@@ -1,0 +1,38 @@
+# Implementation
+
+## Block design
+Below is the block diagram of the project, a better overview can be found in the project
+repository [here](https://mygit.th-deg.de/hj03417/fpga_project/-/raw/main/Images/Block%20diagram.jpg)
+
+
+![Block Design](https://mygit.th-deg.de/hj03417/fpga_project/-/raw/main/Images/Block%20diagram.jpg)
+<p align="center"> Fig.3.1 Call Nurse System Block Design  </p>  
+
+
+## Memory block
+The user can input here the address of the machine and its output if the machine is available
+or not.
+
+## Payment Block
+in this block we have lot of state machines between the payments statues from 0 up to 290
+cent. It has 2 outputs, if 2 euro is paid then high is asserted, if not low will be asserted.
+
+## Laundry system core
+Here all the input of the system is being evaluated and based on the output will be asserted
+to the seven segment display. Here we have the 6 state machines. The flow will be explained
+later in the report.
+
+## Segment display
+2 Seven-segment displays are being used one as counter of the machines and the other
+one is the guidance.
+
+## Test bench and Hardware design
+I tried different inputs for the system but I had always the same output which means that
+is something wrong in the code which I unfortunately was not able to find the error
+exactly. I built another simpler code ( will be attached as well) and the problem has not
+been solved. [system testbench](https://mygit.th-deg.de/hj03417/fpga_project/-/raw/main/Images/Test_bench.jpg).
+
+I believe that my mistake was building the Seven-segment_displays without consideration of the architecture of the
+Boolean board.
+I dealt with the board as it has different 4 different displays while they can be decoded with activation o0f anode and cathode.    
+

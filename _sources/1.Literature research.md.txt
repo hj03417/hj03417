@@ -1,0 +1,8 @@
+# literature research
+
+This FPGA project aim is to organize the process but in more modern way than the
+conventional way. It uses the seven-segment display to guide the user step by step, it as
+well counts the used machines. That is helpful in the dorms that uses high number of
+washing machine.
+I worked in this project before with my colleagues. This course would be a great opportunity
+to carry on the process of the project.

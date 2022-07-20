@@ -1,0 +1,6 @@
+
+# Conclusions
+The project aim is to allow me to be able to program the blocks we learn in the
+course. I used seven segment display decoder, memory and machine states. It was very
+unfortunate not to deliver final results . I believe that the mistake was by building the code without consideration of the boolean board architecture
+

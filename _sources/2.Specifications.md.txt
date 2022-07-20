@@ -1,0 +1,72 @@
+# Specifications
+
+the automated laundry system functions as follows.
+There are 9 machines in the room, there is several inputs like the nearby person sensor,
+that will give 1 once there are a person near the machine like the sensor that is being used
+in ATMs. And there are also outputs like the change of the coin and the results of course
+are displayed on the seven-segment display. A memory is used to show the how many
+washing machines are available. For easiness of programming the user can insert 50 cent
+and one euro, The needed amount is 200 cents for activation a machine.
+For example, when a person is nearby the sensor detects the user and activate the system.
+A memory is being used to count the used machines to detect the availability state, the
+user also has to input a pin that is for the system.
+If there are available machine it will be used to process to the next stage which is
+payment. The seven-segment display will show PAY, Full and many other situations. If the
+coins are being inserted the stage 4 then will be activated.
+The summation of the inserted coins is shown on the seven-segment display. If the
+summation reaches 200 cent the next step will be then activated which is the start state if
+the coins are more than 200 an output of the change will be then triggered
+
+As explained above we will be having 6 machine states
+
+no_action_state : initial state
+
+user_detect_state
+This state detects if a user near the controller via sensor.
+
+verification_state
+This state comes after user detected state where the user has been detected and the user
+will need to enter a password. Then verify the password will be handled here and if the
+password is correct the used washing machine number will be displayed on the 7-
+segement-display.
+
+availability_state
+A memory check will be proceeded here to check if the entered washing machine number
+to be used is available or not.
+
+payment_state
+Now the user can pay for the wash using 50, 20, 10 and 5 cents.
+
+start_state
+The user ready to use the washing machine.
+
+full_state
+Will display full sign on the 7-segment-display screen
+
+
+
+
+
+![Boolean Board ](https://mygit.th-deg.de/hj03417/fpga_project/-/raw/main/Images/Board.jpg "Logo Title Text 1")
+<p align="center"> Fig.2.2 Boolean board inputs and outputs that are used in the project </p>  
+ 
+
+
+
+In this project there are 1 major hardware components which are:
+• FPGA board: Xilinx Spartan-7 XC7S50 CSGA324
+https://www.realdigital.org/hardware/boolean
+
+
+
+In the Image above the inputs and the output representation is
+Input
+- Nearby person sensor (Switch) → nearby person is approaching the system
+- Push button [0:3]→ to trigger the payment elements which is 50 and 100 cents
+- 4 switches for the address
+- 4 switches for the password
+- Clock → Main clock of the Boolean board(100MHz)
+Output
+- Seven segment display1 → will display the number of available machines
+- Seven segment display2 → will guide the user
+- Led (0-3)→ Green LED for Coin_out
